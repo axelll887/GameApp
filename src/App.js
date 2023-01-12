@@ -1,16 +1,12 @@
 import "./App.css";
 import Navbar from "./components/navbar/Navbar";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { useState, useEffect, useRef } from "react";
+import { useState } from "react";
 import GameCollection from "./pages/GameCollection";
 import Home from "./pages/Home";
 import Search from "./pages/Search";
 
 function App() {
-  const [APIData, setAPIData] = useState({
-    count: 0,
-    games: [],
-  });
 
   const [gamesToAdd, setGamesToAdd] = useState({
     games: [],
@@ -34,8 +30,6 @@ function App() {
             path="/Search"
             element={
               <Search
-                setAPIData={setAPIData}
-                APIData={APIData}
                 gamesToAdd={gamesToAdd}
                 setGamesToAdd={setGamesToAdd}
               />

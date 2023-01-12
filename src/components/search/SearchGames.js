@@ -1,8 +1,51 @@
 import React from "react";
 import "./SearchGames.css";
+import { useDebounce } from "../debounce/Debounce";
+import { useState, useEffect } from "react";
+import { searchGame } from "../services/Api";
 
 
 function SearchGames(props) {
+  const [searchTerm, setSearchTerm] = useState("");
+  const debouncedSearchTerm = useDebounce(searchTerm, 500);
+
+    const addGameToList = (game) => {
+      // Kolla ifall samma namn redan finns i gamesToAdd
+      if (props.gamesToAdd.games.some((g) => g.id === game.id)) {
+        // Ifall det finns, gör inget
+        return;
+      }
+      props.setGamesToAdd({ games: props.gamesToAdd.games.concat(game) });
+    };
+
+  useEffect(() => {
+    let isCancelled = false;
+    const search = async () => {
+      try {
+        const results = await searchGame(debouncedSearchTerm);
+        if (!isCancelled) {
+          props.setAPIData({
+            count: results.data.count,
+            games: results.data.games,
+          });
+        }
+      } catch (err) {
+        console.log(err);
+      }
+    };
+    if (debouncedSearchTerm) {
+      search();
+    } else {
+      props.setAPIData({
+        count: 0,
+        games: [],
+      });
+    }
+    return () => {
+      isCancelled = true;
+    };
+  }, [debouncedSearchTerm]);
+
 
   return (
     <div className="search-game-main">
@@ -10,7 +53,7 @@ function SearchGames(props) {
       <div className="search-game">
         <input
           placeholder="Search.."
-          onChange={(e) => props.setSearchTerm(e.target.value)}
+          onChange={(e) => setSearchTerm(e.target.value)}
           className="search-input"
         />
         {props.APIData.games.map((result) => (
@@ -18,7 +61,7 @@ function SearchGames(props) {
             {result.name}
             <button
               className="add-from-search"
-              onClick={() => props.addGameToList(result)}
+              onClick={() => addGameToList(result)}
             >
               Add
             </button>

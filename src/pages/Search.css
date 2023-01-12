@@ -1,0 +1,15 @@
+
+.main-container {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.search-games-container {
+    width: 100%;
+}
+
+.game-collection-list-container {
+    width: 100%;
+}
+

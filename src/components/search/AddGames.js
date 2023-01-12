@@ -1,10 +1,10 @@
 import React from "react";
-import "./GameCollectionList.css";
+import "./AddGames.css";
 import * as ImIcons from "react-icons/im";
 import { addGame } from "../services/Api";
 
 
-function GameCollectionList(props) {
+function AddGames(props) {
  
 const removeFromGameList = (game) => {
   props.setGamesToAdd({ games: props.gamesToAdd.games.filter((g) => g.id !== game.id) });
@@ -40,4 +40,4 @@ const addToDashboard = () => {
 
 
 
-export default GameCollectionList;
+export default AddGames;

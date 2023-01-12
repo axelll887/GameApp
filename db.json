@@ -62,6 +62,42 @@
       "playtime": "30 min",
       "rating": 3,
       "image_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1626789069947"
+    },
+    {
+      "name": "Catan: Cities & Knights",
+      "id": "E5TYKwLTf0",
+      "max_players": 4,
+      "min_players": 3,
+      "playtime": "60-90 min",
+      "rating": 4,
+      "image_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1559257359245-51DYsPZcYyL.jpg"
+    },
+    {
+      "name": "Explorers of the North Sea",
+      "id": "H11xb8oEA3",
+      "max_players": 4,
+      "min_players": 1,
+      "playtime": "45-60 min",
+      "rating": "",
+      "image_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1559254909414-6179J8LmJfL.jpg"
+    },
+    {
+      "name": "Explorers of the North Sea: Rocks of Ruin Expansion",
+      "id": "ucqw6DcFur",
+      "max_players": 5,
+      "min_players": 1,
+      "playtime": "60-90 min",
+      "rating": "",
+      "image_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1540937178833"
+    },
+    {
+      "name": "Azul",
+      "id": "i5Oqu5VZgP",
+      "max_players": 4,
+      "min_players": 2,
+      "playtime": "30-60 min",
+      "rating": "",
+      "image_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1559254200327-61EFZADvURL.jpg"
     }
   ]
 }
