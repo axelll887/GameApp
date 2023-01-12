@@ -32,7 +32,6 @@ export const searchGame = (searchTerm) => {
     .get(
       `https://api.boardgameatlas.com/api/search?name=${searchTerm}&limit=5&client_id=${idKey}`
     )
-    .then((res) => console.log(res))
     .catch((err) => console.log(err));
 };
 

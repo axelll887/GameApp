@@ -11,6 +11,7 @@ function App() {
     count: 0,
     games: [],
   });
+
   const [gamesToAdd, setGamesToAdd] = useState({
     games: [],
   });
