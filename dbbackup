@@ -1,0 +1,13 @@
+{
+  "collection": [
+    {
+      "name": "Catan",
+      "id": "OIXt3DmJU0",
+      "max_players": 4,
+      "min_players": 3,
+      "playtime": "45-90 min",
+      "rating": "",
+      "image_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1629324722072.jpg"
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+.collection-div {
+          text-align: center;
+          
+}
+
+.filter-input {
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+  margin: 16px auto;
+  padding: 12px;
+  border-radius: 4px;
+  font-size: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.collection-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 1400px;
+    box-shadow: 0 0 20px rgba(149, 14, 14, 0.15);
+    margin: auto;
+
+}
+.collection-table thead tr {
+    background-color: #060b26;
+    color: #ffffff;
+    text-align: left;
+    position: sticky;
+    top: 0;       
+}
+
+.collection-table th,
+.collection-table td {
+    padding: 12px 15px;
+}
+.collection-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+    
+}
+
+.collection-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.collection-table tbody tr:last-of-type {
+    border-bottom: 2px solid #060b26;
+}
+.collection-table tbody tr.active-row {
+    font-weight: bold;
+    color: #060b26;
+}
+.star {
+    color: #ddd;
+    /* default color */
+    cursor: pointer;
+    /* show a hand cursor */
+}
+
+.star:hover {
+    color: #FFD700;
+    /* change color on hover */
+}
+
+.star.selected {
+    color: #FFD700;
+    /* permanently change color when selected */
+}
+
+.red-cross-collection {
+    fill: red;
+    top:2px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}

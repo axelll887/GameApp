@@ -1,0 +1,112 @@
+{
+  "collection": [
+    {
+      "name": "Catan",
+      "id": "OIXt3DmJU0",
+      "max_players": 4,
+      "min_players": 3,
+      "playtime": "45-90 min",
+      "rating": 2,
+      "image_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1629324722072.jpg"
+    },
+    {
+      "name": "Risk",
+      "id": "EL3YmDLY6W",
+      "max_players": 6,
+      "min_players": 2,
+      "playtime": "120 min",
+      "rating": "",
+      "image_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1559254847937-51zyVWbt8aL.jpg"
+    },
+    {
+      "name": "Sushi Go!",
+      "id": "61SwzHG7fB",
+      "max_players": 5,
+      "min_players": 2,
+      "playtime": "15-30 min",
+      "rating": "",
+      "image_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1632756769364"
+    },
+    {
+      "name": "Exploding Kittens",
+      "id": "74f9mzbw9Y",
+      "max_players": 5,
+      "min_players": 2,
+      "playtime": "10-20 min",
+      "rating": 4,
+      "image_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1559257206847-51osODpsNIL.jpg"
+    },
+    {
+      "name": "Bears vs Babies",
+      "id": "RmjGTWo7yQ",
+      "max_players": 5,
+      "min_players": 2,
+      "playtime": "15-20 min",
+      "rating": 3,
+      "image_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1559254783070-51yxsXAa9LL.jpg"
+    },
+    {
+      "name": "Catan Card Game",
+      "id": "MiOTS94YV3",
+      "max_players": 4,
+      "min_players": 2,
+      "playtime": "45-60 min",
+      "rating": "",
+      "image_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1559257476571-51iAbkahd1L.jpg"
+    },
+    {
+      "name": "Catan: Seafarers Expansion",
+      "id": "NoWy3nPYfj",
+      "max_players": 4,
+      "min_players": 3,
+      "playtime": "60-90 min",
+      "rating": 3,
+      "image_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1559257503054-51u0777bL3L.jpg"
+    },
+    {
+      "name": "Catan: 5-6 Player Extension",
+      "id": "EvYzPCnCGG",
+      "max_players": 6,
+      "min_players": 5,
+      "playtime": "60-90 min",
+      "rating": 2,
+      "image_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1559254797611-51uLrWkNt0L.jpg"
+    },
+    {
+      "name": "Trickerion",
+      "id": "OFO3RwkDTC",
+      "max_players": 4,
+      "min_players": 2,
+      "playtime": "60-120 min",
+      "rating": "",
+      "image_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1622384345401"
+    },
+    {
+      "name": "Telestrations",
+      "id": "cyscZjjlse",
+      "max_players": 8,
+      "min_players": 4,
+      "playtime": "30-45 min",
+      "rating": "",
+      "image_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1559258098404-61EgR3yjKXL.jpg"
+    },
+    {
+      "name": "Piece o' Cake",
+      "id": "0RoKt6QNhe",
+      "max_players": 5,
+      "min_players": 2,
+      "playtime": "20 min",
+      "rating": "",
+      "image_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1559257170700-61n-K5kz8xL.jpg"
+    },
+    {
+      "name": "Backgammon",
+      "id": "YBJODy05aF",
+      "max_players": 2,
+      "min_players": 2,
+      "playtime": "30 min",
+      "rating": "",
+      "image_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1626789069947"
+    }
+  ]
+}
