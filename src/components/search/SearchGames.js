@@ -4,19 +4,22 @@ import { useDebounce } from "../debounce/Debounce";
 import { useState, useEffect } from "react";
 import { searchGame } from "../services/Api";
 
-
 function SearchGames(props) {
   const [searchTerm, setSearchTerm] = useState("");
   const debouncedSearchTerm = useDebounce(searchTerm, 500);
+  const [APIData, setAPIData] = useState({
+    count: 0,
+    games: [],
+  });
 
-    const addGameToList = (game) => {
-      // Kolla ifall samma namn redan finns i gamesToAdd
-      if (props.gamesToAdd.games.some((g) => g.id === game.id)) {
-        // Ifall det finns, gör inget
-        return;
-      }
-      props.setGamesToAdd({ games: props.gamesToAdd.games.concat(game) });
-    };
+  const addGameToList = (game) => {
+    // Kolla ifall samma namn redan finns i gamesToAdd
+    if (props.gamesToAdd.games.some((g) => g.id === game.id)) {
+      // Ifall det finns, gör inget
+      return;
+    }
+    props.setGamesToAdd({ games: props.gamesToAdd.games.concat(game) });
+  };
 
   useEffect(() => {
     let isCancelled = false;
@@ -24,7 +27,7 @@ function SearchGames(props) {
       try {
         const results = await searchGame(debouncedSearchTerm);
         if (!isCancelled) {
-          props.setAPIData({
+          setAPIData({
             count: results.data.count,
             games: results.data.games,
           });
@@ -36,7 +39,7 @@ function SearchGames(props) {
     if (debouncedSearchTerm) {
       search();
     } else {
-      props.setAPIData({
+      setAPIData({
         count: 0,
         games: [],
       });
@@ -45,7 +48,6 @@ function SearchGames(props) {
       isCancelled = true;
     };
   }, [debouncedSearchTerm]);
-
 
   return (
     <div className="search-game-main">
@@ -56,7 +58,7 @@ function SearchGames(props) {
           onChange={(e) => setSearchTerm(e.target.value)}
           className="search-input"
         />
-        {props.APIData.games.map((result) => (
+        {APIData.games.map((result) => (
           <ul key={result.id} className="result-item">
             {result.name}
             <button

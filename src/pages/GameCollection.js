@@ -1,13 +1,9 @@
 import React from 'react'
 import Collection from '../components/collection/Collection'
 
-function GameCollection(props) {
+function GameCollection() {
   return (
       <Collection
-        gamesToAdd={props.gamesToAdd}
-        setGamesToAdd={props.setGamesToAdd}
-        games={props.games}
-        setGames={props.setGames}
       />
   );
 }

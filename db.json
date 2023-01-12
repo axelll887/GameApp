@@ -15,7 +15,7 @@
       "max_players": 6,
       "min_players": 2,
       "playtime": "120 min",
-      "rating": "",
+      "rating": 2,
       "image_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1559254847937-51zyVWbt8aL.jpg"
     },
     {
@@ -24,7 +24,7 @@
       "max_players": 5,
       "min_players": 2,
       "playtime": "15-30 min",
-      "rating": "",
+      "rating": 3,
       "image_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1632756769364"
     },
     {
@@ -35,24 +35,6 @@
       "playtime": "10-20 min",
       "rating": 4,
       "image_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1559257206847-51osODpsNIL.jpg"
-    },
-    {
-      "name": "Trickerion",
-      "id": "OFO3RwkDTC",
-      "max_players": 4,
-      "min_players": 2,
-      "playtime": "60-120 min",
-      "rating": "",
-      "image_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1622384345401"
-    },
-    {
-      "name": "Telestrations",
-      "id": "cyscZjjlse",
-      "max_players": 8,
-      "min_players": 4,
-      "playtime": "30-45 min",
-      "rating": "",
-      "image_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1559258098404-61EgR3yjKXL.jpg"
     },
     {
       "name": "Backgammon",
@@ -73,31 +55,58 @@
       "image_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1559257359245-51DYsPZcYyL.jpg"
     },
     {
-      "name": "Explorers of the North Sea",
-      "id": "H11xb8oEA3",
-      "max_players": 4,
-      "min_players": 1,
-      "playtime": "45-60 min",
-      "rating": "",
-      "image_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1559254909414-6179J8LmJfL.jpg"
-    },
-    {
-      "name": "Explorers of the North Sea: Rocks of Ruin Expansion",
-      "id": "ucqw6DcFur",
-      "max_players": 5,
-      "min_players": 1,
-      "playtime": "60-90 min",
-      "rating": "",
-      "image_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1540937178833"
-    },
-    {
       "name": "Azul",
       "id": "i5Oqu5VZgP",
       "max_players": 4,
       "min_players": 2,
       "playtime": "30-60 min",
-      "rating": "",
+      "rating": 1,
       "image_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1559254200327-61EFZADvURL.jpg"
+    },
+    {
+      "name": "Monopoly",
+      "id": "fG5Ax8PA7n",
+      "max_players": 8,
+      "min_players": 2,
+      "playtime": "40-300 min",
+      "rating": 3,
+      "image_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1609460299342"
+    },
+    {
+      "name": "Trix",
+      "id": "PUPB0NN7TQ",
+      "max_players": 6,
+      "min_players": 3,
+      "playtime": "30 min",
+      "rating": 5,
+      "image_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1579006881437"
+    },
+    {
+      "name": "Mage Knight: Ultimate Edition",
+      "id": "FknHStKZ4z",
+      "max_players": 4,
+      "min_players": 1,
+      "playtime": "150-180 min",
+      "rating": "",
+      "image_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1559254907272-61Ip-or8yzL.jpg"
+    },
+    {
+      "name": "Twilight Imperium: Fourth Edition – Prophecy of Kings",
+      "id": "5qaWQC3bcb",
+      "max_players": 8,
+      "min_players": 3,
+      "playtime": "240-480 min",
+      "rating": "",
+      "image_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1596503779926"
+    },
+    {
+      "name": "Honey Buzz",
+      "id": "OurWpxb7s6",
+      "max_players": 4,
+      "min_players": 1,
+      "playtime": "45-90 min",
+      "rating": "",
+      "image_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1600727156287"
     }
   ]
 }

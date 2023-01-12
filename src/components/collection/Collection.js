@@ -1,13 +1,8 @@
 import React from "react";
-import { useState, useEffect} from "react";
+import { useState, useEffect } from "react";
 import "./Collection.css";
 import * as ImIcons from "react-icons/im";
-import {
-  fetchServerData,
-  updateRating,
-  deleteGame,
-} from "../services/Api";
-
+import { fetchServerData, updateRating, deleteGame } from "../services/Api";
 
 function Collection() {
   const [data, setData] = useState([{}]);
@@ -17,16 +12,13 @@ function Collection() {
     fetchServerData(setData);
   }, []);
 
-const handleRatingChange = (id, rating) => {
-
-const gameIndex = data.findIndex((game) => game.id === id);
-const newData = [...data];
-newData[gameIndex].rating = rating;
-setData(newData);
-updateRating(newData[gameIndex]);
-
-
-};
+  const handleRatingChange = (id, rating) => {
+    const gameIndex = data.findIndex((game) => game.id === id);
+    const newData = [...data];
+    newData[gameIndex].rating = rating;
+    setData(newData);
+    updateRating(newData[gameIndex]);
+  };
 
   return (
     <div className="collection.div">
@@ -60,7 +52,7 @@ updateRating(newData[gameIndex]);
             )
             .map((game) => {
               return (
-                <tr key={game.id + 'game'}>
+                <tr key={game.id + "game"}>
                   <td>
                     <img
                       width="80"
@@ -103,6 +95,5 @@ updateRating(newData[gameIndex]);
     </div>
   );
 }
-
 
 export default Collection;

@@ -11,6 +11,7 @@ function App() {
   const [gamesToAdd, setGamesToAdd] = useState({
     games: [],
   });
+  
   return (
     <>
       <Router>
@@ -21,8 +22,6 @@ function App() {
             path="/Gamecol"
             element={
               <GameCollection
-                gamesToAdd={gamesToAdd}
-                setGamesToAdd={setGamesToAdd}
               />
             }
           />
