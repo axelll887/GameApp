@@ -25,6 +25,7 @@ newData[gameIndex].rating = rating;
 setData(newData);
 updateRating(newData[gameIndex]);
 
+console.log('hej')
 };
 
   return (
