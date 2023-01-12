@@ -14,7 +14,6 @@ const addToDashboard = () => {
    //  props.setGames(props.gamesToAdd)
      addGame(props.gamesToAdd);
      props.setGamesToAdd({games: []})
-     console.log('hej')
 };
            
   return (
